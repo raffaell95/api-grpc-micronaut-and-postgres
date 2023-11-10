@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: productsService
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/productdatabase
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: password
+    schema-generate: CREATE_DROP
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
